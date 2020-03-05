@@ -7,7 +7,7 @@
 # <https://github.com/KFERMercer/OpenWrt-CI>
 #
 
-name: OpenWrt-k2p syncdial
+name: OpenWrt firmware k2p syncdial
 
 on:
   schedule:
@@ -177,5 +177,5 @@ jobs:
       - name: Upload artifact
         uses: actions/upload-artifact@master
         with:
-          name: OpenWrt k2p syncdial
+          name: OpenWrt firmware k2p syncdial
           path: ./bin/targets/
