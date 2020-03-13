@@ -108,7 +108,6 @@ jobs:
 
           # IPv6支持:
           cat >> .config <<EOF
-          CONFIG_PACKAGE_dnsmasq_full_dhcpv6=y
           CONFIG_PACKAGE_ipv6helper=y
           EOF          
                     
@@ -141,7 +140,7 @@ jobs:
           CONFIG_PACKAGE_luci-app-ssr-plus_INCLUDE_DNS2SOCKS=y                     
           CONFIG_PACKAGE_luci-app-syncdial=y
           CONFIG_PACKAGE_luci-app-unblockmusic=y
-          # CONFIG_UnblockNeteaseMusic_Go is not set                
+          CONFIG_UnblockNeteaseMusic_Go=y               
           CONFIG_PACKAGE_luci-app-upnp=y          
           CONFIG_PACKAGE_luci-app-vlmcsd=y
           # CONFIG_PACKAGE_luci-app-vsftpd is not set
